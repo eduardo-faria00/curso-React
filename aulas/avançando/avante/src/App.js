@@ -4,10 +4,12 @@ import ListRender from './components/ListRender';
 import Conditional from './components/Conditional';
 import ShowUserName from './components/ShowUserName';
 import CarDetails from './components/CarDetails';
+import Container from './components/Container';
 
 // importando a imagem de assets
 import logo from './assets/logo512.png'
 import './App.css';
+import ExecuteFunctions from './components/ExecuteFunctions';
 
 function App() {
   const name = 'Esther'
@@ -18,6 +20,10 @@ function App() {
     { id: 3, brand: 'Fiat', km: 2300, color: 'cinza' },
   ]
 
+  const propFunc = ()=>{
+    console.log('Evento do componente pai')
+  }
+  
   return (
     <div className="App">
       <h1>Avançando em React</h1>
@@ -43,6 +49,12 @@ function App() {
           km={car.km} 
           color={car.color} />
       ))}
+      {/* children */}
+      <Container>
+        <p>conteudo abraçado pelo container</p>
+      </Container>
+      {/* função prop */}
+      <ExecuteFunctions func={propFunc}/>
     </div>
   );
 }

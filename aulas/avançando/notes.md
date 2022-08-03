@@ -89,6 +89,21 @@
 
 ============================ Children prop ===============================
 
-#
+# Children prop é um recurso utilizado para quando um componente precisa
+# ter JSX dentro dele, porém esse JSX vem do componente pai. Então o 
+# componente age como um container, abraçando estes elementos. Children
+# é considerada uma propriedade do componente.
 
+========================== Funções em props ==============================
+
+# As funções podem ser passadas para as props normalmente, basta criar
+# a função no componente pai e enviar como prop para o componente. No
+# componente filho ela pode ser executada por um evento por exemplo.
+
+============================= State lift =================================
+
+# State lift ou elevação de state é quando um valor é elevado do componente
+# filho para o componente pai. Geralmente temos um componente que usa o state
+# e um componente que altera o state, então precisamos passar o state para o
+# componente pai fazer a ponte entre os outros componentes.
 
