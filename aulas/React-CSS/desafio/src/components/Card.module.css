@@ -1,0 +1,19 @@
+.card{
+    background-color: aliceblue;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.75);
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: .75rem;
+}
+
+.card h2{
+    width: 80%;
+    border-bottom: 1px solid rgb(150, 150, 150);
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    margin: .5rem 0;
+}
