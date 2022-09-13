@@ -55,3 +55,30 @@
 # vamos precisar criar um componente que corresponda com o padrão indicado e também a
 
 # URL em App.js. Na nested route teremos o acesso ao parametro da URL também.
+
+=================================== Not found route ======================================
+
+# Podemos criar uma página 404 facilmente, basta criarmos o componente da página e, no
+# arquivo App.js definir um path como "*". Desta maneira, qualquer rota que não exista cairá
+# neste componente.
+
+===================================== Link ativo =========================================
+
+# Para ter fácil acesso a uma modificação para os links ativos vamos trocar o link pelo
+# NavLink. Neste elemento temos acesso a um valor chamado isActive, ou seja, uma classe
+# "active" é adicionada ao elemento <a> se a rota atual for igual a que está no atributo 
+# "to" do <NavLink>. A classe active pode ser usada para adicionar estilos e identificar
+# qual rota está ativa no momento.
+
+==================================== Search Params =======================================
+
+# Search Params é um recurso que permite obter o que vem na URL em forma de parâmetro.
+# Ex: produtos?q=camisa. Utilizamos o hook useSearchParams para obtê-los. Com este recurso
+# fica simples fazer uma funcionalidade de busca no sistema.
+
+======================================= Redirect =========================================
+
+# Eventualmente precisamos de um redirecionamento de páginas, por exemplo: uma página
+# antiga dos sistema responde agora a uma nova URL. Para isso vamos criar a rota com
+# Route normalmente, mas em element vamos utilizar o componente Navigate com um to que
+# vai para a rota correta.

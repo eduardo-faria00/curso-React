@@ -1,0 +1,22 @@
+input{
+    border: 1px solid;
+    outline: none;
+    padding: 3px;
+    font-size: 1em;
+    transition: .2s;
+}
+
+.submit-input{
+    border-radius: 0 8px 8px 0;
+    background-color: black;
+    border-color: black;
+    color: aliceblue;
+}
+
+.submit-input:hover{
+    color: gray;
+}
+
+.text-input{
+    border-radius: 8px 0 0 8px;
+}
