@@ -1,0 +1,23 @@
+nav{
+  display: flex;
+  color: aliceblue;
+  background-color: black;
+  padding: .5rem;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.options{
+  display: flex;
+  align-items: center;
+}
+
+.options a{
+  color: aliceblue;
+  margin: 0 .5rem;
+  transition: .2s;
+}
+
+.options a:hover{
+  color: gray;
+}
