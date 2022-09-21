@@ -31,3 +31,23 @@
 # em App.js, ou index.js. Agora poderemos compartilhar o valor do contexto em todos
 
 # os componentes.
+
+============================== Alterando o contexto ===========================
+
+# Para alterar o valor do contexto precisamos criar um componente que utilize a
+# função de mudança de contexto. Esta mudança ocorrerá no context e poderá ser
+# consumida por todos os componentes que recebem o contexto.
+
+================================ Context com hook =============================
+
+# Podemos criar um hook para utilizar o contexto, isso nos dá algumas vantagens:
+# Não precisamos importar o useContext em todos os lugares que vamos usar o
+# contexto, apenas o hook, e temos um espaço para fazer uma validação de contexto.
+
+================================ Contexto complexo ============================
+
+# Contextos mais complexos podem ter variações no comportamento. Para isso, vamos
+# utilizar um hook chamado useReducer, que é como um useState, mas para controle
+# de dados complexos. No reducer teremos diferentes ações com um switch, e na
+# aplicação vamos consumir o estado atual do dado que está no reducer.
+

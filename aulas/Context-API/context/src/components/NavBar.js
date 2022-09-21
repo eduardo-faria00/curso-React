@@ -7,8 +7,8 @@ const NavBar = () => {
       <h1>Context</h1>
       <div className="options">
         <NavLink to="/">Home</NavLink>
-        <NavLink to="/about">Produtos</NavLink>
-        <NavLink to="/products">Sobre</NavLink>
+        <NavLink to="/products">Produtos</NavLink>
+        <NavLink to="/about">Sobre</NavLink>
       </div>
     </nav>
   )
