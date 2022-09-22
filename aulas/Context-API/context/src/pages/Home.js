@@ -4,6 +4,7 @@ import ChangeCounter from '../components/ChangeCounter'
 
 // hook para usar o contexto
 import { useCounterContext } from '../hooks/useCounterContext'
+import { useTitleColorContext} from '../hooks/useTitleColorContext'
 
 const Home = () => {
   // contexto sendo usado da forma convencional

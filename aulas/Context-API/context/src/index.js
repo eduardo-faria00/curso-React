@@ -2,15 +2,18 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import App from './App'
-
+// contextos
 import { CounterContextProvider } from './context/CounterContext'
+import { TitleColorContextProvider } from './context/TitleColorContext'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
     {/* criando provider */}
     <CounterContextProvider>
-      <App />
+      <TitleColorContextProvider>
+        <App />
+      </TitleColorContextProvider>
     </CounterContextProvider>
   </React.StrictMode>
 )
