@@ -49,5 +49,8 @@
 # Contextos mais complexos podem ter variações no comportamento. Para isso, vamos
 # utilizar um hook chamado useReducer, que é como um useState, mas para controle
 # de dados complexos. No reducer teremos diferentes ações com um switch, e na
-# aplicação vamos consumir o estado atual do dado que está no reducer.
+# aplicação vamos consumir o estado atual do dado que está no reducer. Para alterar
+# o contexto vamos utilizar uma função chamada dispatch. Ela estará no reducer
+# também, e deve conter todas as informações necessárias para a alteração do valor
+# do contexto. Ou seja, o switch entra em ação e retorna um novo contexto.
 

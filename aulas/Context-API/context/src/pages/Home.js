@@ -12,13 +12,22 @@ const Home = () => {
   
   // contexto sendo usado com hook
   const {counter} = useCounterContext()
+  // contexto mais complexo
+  const {color, dispatch} = useTitleColorContext()
+  
+  // alterando o valor do contexto complexo
+  const setTitleColor = (color) => {
+    dispatch({type: color})
+  }
 
   return (
     <div>
-      <h1>Home</h1>
+      <h1 style={{color: color}}>Home</h1>
       <p>valor do contador: {counter}</p>
       {/* alterando o valor do contexto */}
       <ChangeCounter/>
+      {/* alterando contexto complexo */}
+      <div><button onClick={() => setTitleColor("RED")}>titulo vermelho</button></div>
     </div>
   )
 }
