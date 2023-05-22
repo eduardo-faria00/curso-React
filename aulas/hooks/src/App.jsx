@@ -1,10 +1,10 @@
-
 import './App.css'
+import UseReducerHook from './components/use_reducer_hook'
 
 export default function App() {  
-  return <>
-    <h1>Hooks React</h1>
-  </>
+  return <div className="App">
+    <UseReducerHook/>
+  </div>
 
 }
 
